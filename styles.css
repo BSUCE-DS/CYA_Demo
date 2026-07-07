@@ -448,8 +448,8 @@
 .ct-bs-restart-btn {
     display: block;
     width: 100%;
-    background: var(--primary, #6366f1);
-    border: 2px solid var(--primary, #6366f1);
+    background: var(--primary, #1366a4);
+    border: 2px solid var(--primary, #1366a4);
     color: var(--primary-text, #ffffff);
     padding: 13px 20px;
     border-radius: 30px;
@@ -461,10 +461,10 @@
 }
 .ct-bs-restart-btn:hover {
     background: transparent;
-    color: var(--primary, #6366f1);
+    color: var(--primary, #1366a4);
 }
 .ct-bs-restart-btn:focus-visible {
-    outline: 3px solid var(--primary, #6366f1);
+    outline: 3px solid var(--primary, #1366a4);
     outline-offset: 2px;
 }
 
