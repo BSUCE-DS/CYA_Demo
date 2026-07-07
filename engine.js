@@ -187,9 +187,9 @@ const ACTIVITY_DATA = {
             advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_3_3: {
-            heading: "Conclusion heading",
-            summary: "Path summary.",
-            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
+            heading: "You helped diffuse the situation",
+            summary: "You're emotionally attuned, and used your interpersonal engagement skills to bring the team back to harmony.",
+            advice:  "Situations like this can be hard to handle, and it's not always correct to intervene, but you did the right thing here for handling a casual disagreement between colleagues. Reflect on some scenarios where it may be better to report or escalate."
         }
     }
 };
