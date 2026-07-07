@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MIKE'S CAREERTECH TOOLKIT: BRANCHING SCENARIO ENGINE
+   BRANCHING SCENARIO ENGINE
    engine.js — Dialogue tree logic and rendering
    ========================================================================== */
 
