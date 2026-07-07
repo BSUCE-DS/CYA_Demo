@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        EDIT: Change the <title> below to match your activity name.
+        This appears in the browser tab.
+    -->
+    <title>Branching Scenario — CareerTech Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="careertech-widget-container">
+
+        <!--
+        ╔══════════════════════════════════════════════════╗
+        ║  ACTIVITY HEADER                                 ║
+        ║  Edit the h1 and p text below to set your       ║
+        ║  activity title and instructions.                ║
+        ╚══════════════════════════════════════════════════╝
+        -->
+        <header class="ct-bs-header">
+            <span class="ct-bs-toolkit-tag">CareerTech Toolkit</span>
+            <h1 class="ct-bs-title">Activity Title Here</h1>
+            <p class="ct-bs-subtitle">
+                Activity description or instructions here. Read the scenario and choose how you would respond at each stage.
+            </p>
+        </header>
+
+        <!--
+        ╔══════════════════════════════════════════════════╗
+        ║  PROGRESS TRACKER                                ║
+        ║  Labels for the three steps. Edit the            ║
+        ║  ct-bs-step-label text to rename steps.          ║
+        ╚══════════════════════════════════════════════════╝
+        -->
+        <nav class="ct-bs-progress" aria-label="Activity progress">
+            <div class="ct-bs-progress-step ct-bs-step--active" id="ct-step-1">
+                <div class="ct-bs-step-circle"><span>1</span></div>
+                <span class="ct-bs-step-label">Scenario</span>
+            </div>
+            <div class="ct-bs-progress-line" id="ct-line-1"></div>
+            <div class="ct-bs-progress-step ct-bs-step--upcoming" id="ct-step-2">
+                <div class="ct-bs-step-circle"><span>2</span></div>
+                <span class="ct-bs-step-label">Decision</span>
+            </div>
+            <div class="ct-bs-progress-line" id="ct-line-2"></div>
+            <div class="ct-bs-progress-step ct-bs-step--upcoming" id="ct-step-3">
+                <div class="ct-bs-step-circle"><span>3</span></div>
+                <span class="ct-bs-step-label">Outcome</span>
+            </div>
+        </nav>
+
+        <!--
+        ╔══════════════════════════════════════════════════╗
+        ║  DYNAMIC CONTENT AREA                            ║
+        ║  Do not edit this element. The engine.js         ║
+        ║  script populates it automatically.              ║
+        ╚══════════════════════════════════════════════════╝
+        -->
+        <main id="ct-display-area" aria-live="polite">
+            <!-- Content injected by engine.js -->
+        </main>
+
+    </div>
+
+    <script src="engine.js"></script>
+</body>
+</html>
