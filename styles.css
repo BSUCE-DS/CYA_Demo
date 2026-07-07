@@ -448,23 +448,23 @@
 .ct-bs-restart-btn {
     display: block;
     width: 100%;
-    background: transparent;
-    border: 2px solid #e2e8f0;
-    color: var(--bg-text, #0f172a);
+    background: var(--primary, #6366f1);
+    border: 2px solid var(--primary, #6366f1);
+    color: var(--primary-text, #ffffff);
     padding: 13px 20px;
     border-radius: 30px;
     font-size: 0.95rem;
     font-weight: bold;
     cursor: pointer;
-    transition: border-color 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
     font-family: inherit;
 }
 .ct-bs-restart-btn:hover {
-    border-color: var(--primary, #1366a4);
-    color: var(--primary, #1366a4);
+    background: transparent;
+    color: var(--primary, #6366f1);
 }
 .ct-bs-restart-btn:focus-visible {
-    outline: 3px solid var(--primary, #1366a4);
+    outline: 3px solid var(--primary, #6366f1);
     outline-offset: 2px;
 }
 
