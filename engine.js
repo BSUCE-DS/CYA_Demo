@@ -29,23 +29,23 @@ const ACTIVITY_DATA = {
     ──────────────────────────────────────────────────────
     */
     scenario: {
-        prompt: "Stage 1 scenario text here. Set the scene — what situation is the learner walking into?",
+        prompt: "You've come into work and you see that Dom and Martin are having an argument. What do you do?",
         options: [
             {
-                label: "Option A label here",
-                text:  "Option A — brief description of this choice here."
+                label: "Lick the windows",
+                text:  "Your mother always told you not to, but she's not here. Mlem."
             },
             {
-                label: "Option B label here",
-                text:  "Option B — brief description of this choice here."
+                label: "Side with Dom",
+                text:  "Martin is often wrong. Dom is known for not backing down. Supporting Dom will end the argument quicker."
             },
             {
-                label: "Option C label here",
-                text:  "Option C — brief description of this choice here."
+                label: "Side with Martin",
+                text:  "Dom is often wrong. Martin's been in the team longer and knows how things work. Supporting Martin will end the argument quicker."
             },
             {
-                label: "Option D label here",
-                text:  "Option D — brief description of this choice here."
+                label: "Try to mediate",
+                text:  "Interrupt the argument and involve yourself by asking what's happening."
             }
         ]
     },
@@ -60,39 +60,39 @@ const ACTIVITY_DATA = {
     */
     decisions: {
         option_0: {
-            prompt: "Stage 2 (following choice A) — what happens next? Describe the new situation here.",
+            prompt: "You started licking the windows and the taste and feeling is unusual. Dom and Martin have stopped arguing, and stare at you in silence. What do you do now?",
             options: [
-                { label: "Option A label here", text: "Option A — brief description here." },
-                { label: "Option B label here", text: "Option B — brief description here." },
-                { label: "Option C label here", text: "Option C — brief description here." },
-                { label: "Option D label here", text: "Option D — brief description here." }
+                { label: "Keep licking the windows", text: "It's working... for everyone. Mlem. Mlem." },
+                { label: "Sit at your desk", text: "They've stopped arguing, so it's time to get on with the day as usual." },
+                { label: "Ask what the argument was about", text: "They've calmed down now and have stopped, so it could be a chance for you to help. Or get gossip for later." },
+                { label: "Leave", text: "You've established dominance by turning attention to yourself. Your work here is done." }
             ]
         },
         option_1: {
-            prompt: "Stage 2 (following choice B) — what happens next? Describe the new situation here.",
+            prompt: "Dom thanks you, and explains the situation. Martin is now furious. What should you do now?",
             options: [
-                { label: "Option A label here", text: "Option A — brief description here." },
-                { label: "Option B label here", text: "Option B — brief description here." },
-                { label: "Option C label here", text: "Option C — brief description here." },
-                { label: "Option D label here", text: "Option D — brief description here." }
+                { label: "Ask for Martin's version of events", text: "You're not sure if you got the full story from Dom." },
+                { label: "Tell Martin off", text: "You can't believe what Dom has told you and are angry on his behalf." },
+                { label: "Say that you were wrong, and actually side with Martin", text: "You quickly change your mind after seeing Martin's reaction." },
+                { label: "Back away", text: "The argument has at least stopped. Time to get out of danger." }
             ]
         },
         option_2: {
-            prompt: "Stage 2 (following choice C) — what happens next? Describe the new situation here.",
+            prompt: "Martin thanks you, and explains the situation. Dom is now furious. What you should do now?",
             options: [
-                { label: "Option A label here", text: "Option A — brief description here." },
-                { label: "Option B label here", text: "Option B — brief description here." },
-                { label: "Option C label here", text: "Option C — brief description here." },
-                { label: "Option D label here", text: "Option D — brief description here." }
+                { label: "Ask for Dom's version of events", text: "You're not sure if you got the full story from Martin." },
+                { label: "Tell Dom off", text: "You can't believe what Martin has told you and are angry on his behalf." },
+                { label: "Say that you were wrong, and actually side with Dom", text: "You quickly change your mind after seeing Dom's reaction." },
+                { label: "Back away", text: "The argument has at least stopped. Time to get out of danger." }
             ]
         },
         option_3: {
-            prompt: "Stage 2 (following choice D) — what happens next? Describe the new situation here.",
+            prompt: "Martin and Dom stop arguing and turn to you. They look exasperated. What should you do now?",
             options: [
-                { label: "Option A label here", text: "Option A — brief description here." },
-                { label: "Option B label here", text: "Option B — brief description here." },
-                { label: "Option C label here", text: "Option C — brief description here." },
-                { label: "Option D label here", text: "Option D — brief description here." }
+                { label: "Ask for Martin's version of events", text: "Martin was the last person talking, so let him continue." },
+                { label: "Ask for Dom's version of events", text: "Dom wasn't speaking when you walked in, so invite him to speak." },
+                { label: "Call HR", text: "For their tenth consecutive visit, they get a free coffee!" },
+                { label: "Talk the situation through", text: "From the little you overheard, start asking questions of them both." }
             ]
         }
     },
@@ -112,84 +112,84 @@ const ACTIVITY_DATA = {
     */
     conclusions: {
         option_0_0: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "You died",
+            summary: "You constantly licked the windows, which are rife with chemical residue that later took their course. Laura announced a day off in your honour.",
+            advice:  "For the sake of public hygiene, don't lick public objects. Or most things, really. To stop people who are arguing, attempt polite and gentle mediation."
         },
         option_0_1: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "You got diarrhoea",
+            summary: "You licked the windows, which are rife with chemical residue that later took their course. Martin and Dom left in disgust.",
+            advice:  "For the sake of public hygiene, don't lick public objects. Or most things, really. To stop people who are arguing, attempt polite and gentle mediation."
         },
         option_0_2: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "You have a tummy-ache",
+            summary: "Martin and Dom are disgusted by your display, but after what they saw you do are impressed by your dedication to get them to shut up.",
+            advice:  "For the sake of public hygiene, don't lick public objects. Or most things, really. Try to start polite and gentle mediation earlier."
         },
         option_0_3: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "You turned colleagues against you",
+            summary: "Martin and Dom are disgusted by your display and also leave. They walk behind you outside, and you hear them arguing again.",
+            advice:  "For the sake of public hygiene, don't lick public objects. Or most things, really. To stop people who are arguing, attempt polite and gentle mediation."
         },
         option_1_0: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_1_1: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_1_2: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_1_3: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_2_0: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_2_1: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_2_2: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_2_3: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_3_0: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_3_1: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_3_2: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         },
         option_3_3: {
-            heading: "Conclusion heading here",
-            summary: "One sentence summary of what happened on this path.",
-            advice:  "Your advice or reflection text here. Explain what this outcome means and what the learner can take away from this path."
+            heading: "Conclusion heading",
+            summary: "Path summary.",
+            advice:  "Explanation of how this will apply to working life, and reflection prompts off the conclusion if the user encounters this scenario in the future."
         }
     }
 };
@@ -274,7 +274,7 @@ function renderStage1() {
     wrap.innerHTML = `
         <div class="ct-bs-stage-card">
             <div class="ct-bs-stage-eyebrow">
-                <span class="ct-bs-stage-pip"></span> Stage 1 of 3 — Choose your response
+                <span class="ct-bs-stage-pip"></span> Number 1 - Choose your response
             </div>
             <p class="ct-bs-stage-prompt">${data.prompt}</p>
         </div>
@@ -305,7 +305,7 @@ function renderStage2(choice1Index) {
     wrap.innerHTML = `
         <div class="ct-bs-stage-card">
             <div class="ct-bs-stage-eyebrow">
-                <span class="ct-bs-stage-pip"></span> Stage 2 of 3 — What do you do next?
+                <span class="ct-bs-stage-pip"></span> Number 2 - What do you do next?
             </div>
             <p class="ct-bs-stage-prompt">${data.prompt}</p>
         </div>
@@ -341,7 +341,7 @@ function renderConclusion(choice1Index, choice2Index) {
     wrap.innerHTML = `
         <div class="ct-bs-conclusion-card">
             <div class="ct-bs-stage-eyebrow">
-                <span class="ct-bs-stage-pip"></span> Stage 3 of 3 — Your outcome
+                <span class="ct-bs-stage-pip"></span> Number 3 - Your outcome
             </div>
             <h2 class="ct-bs-conclusion-heading">${data.heading}</h2>
             <p class="ct-bs-conclusion-summary">${data.summary}</p>
@@ -362,7 +362,7 @@ function renderConclusion(choice1Index, choice2Index) {
             </div>
 
             <div class="ct-bs-advice-box">
-                <p class="ct-bs-advice-label">Advice &amp; Reflection</p>
+                <p class="ct-bs-advice-label">Advice and Reflection</p>
                 <p class="ct-bs-advice-text">${data.advice}</p>
             </div>
 
