@@ -344,8 +344,7 @@ function renderConclusion(choice1Index, choice2Index) {
                 <span class="ct-bs-stage-pip"></span> Number 3 - Your outcome
             </div>
             <h2 class="ct-bs-conclusion-heading">${data.heading}</h2>
-            <p class="ct-bs-conclusion-summary">${data.summary}</p>
-
+           
             <div class="ct-bs-path-recap">
                 <p class="ct-bs-path-label">Your path</p>
                 <div class="ct-bs-path-steps">
@@ -360,6 +359,8 @@ function renderConclusion(choice1Index, choice2Index) {
                     </div>
                 </div>
             </div>
+            
+            <p class="ct-bs-conclusion-summary">${data.summary}</p>
 
             <div class="ct-bs-advice-box">
                 <p class="ct-bs-advice-label">Advice and Reflection</p>
@@ -367,7 +368,7 @@ function renderConclusion(choice1Index, choice2Index) {
             </div>
 
             <button class="ct-bs-restart-btn" id="ct-restart-btn">
-                ↺ Try a different path
+                🔁 Try a different path
             </button>
         </div>
     `;
